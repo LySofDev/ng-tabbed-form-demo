@@ -9,14 +9,10 @@ import { FormGroup, FormControl } from '@angular/forms';
 export class GammaFormComponent implements OnInit, OnDestroy {
   constructor() {}
 
-  formGroup: FormGroup;
+  @Input() formGroup: FormGroup;
 
   ngOnInit(): void {
     console.log('Gamma Form mounting');
-    this.formGroup = new FormGroup({
-      one: new FormControl(),
-      two: new FormControl(),
-    });
   }
 
   ngOnDestroy(): void {

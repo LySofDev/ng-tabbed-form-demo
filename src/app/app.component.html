@@ -5,13 +5,19 @@
   </mat-expansion-panel-header>
   <mat-tab-group class="m-12">
     <mat-tab label="Alpha">
-      <app-alpha-form></app-alpha-form>
+      <ng-template matTabContent>
+        <app-alpha-form [formGroup]="alphaFormGroup"></app-alpha-form>
+      </ng-template>
     </mat-tab>
     <mat-tab label="Beta">
-      <app-beta-form></app-beta-form>
+      <ng-template matTabContent>
+        <app-beta-form [formGroup]="betaFormGroup"></app-beta-form>
+      </ng-template>
     </mat-tab>
     <mat-tab label="Gama">
-      <app-gamma-form></app-gamma-form>
+      <ng-template matTabContent>
+        <app-gamma-form [formGroup]="gammaFormGroup"></app-gamma-form>
+      </ng-template>
     </mat-tab>
   </mat-tab-group>
 </mat-expansion-panel>
