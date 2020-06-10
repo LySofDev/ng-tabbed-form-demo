@@ -13,6 +13,7 @@ import { AlphaFormComponent } from './alpha-form/alpha-form.component';
 import { BetaFormComponent } from './beta-form/beta-form.component';
 import { GammaFormComponent } from './gamma-form/gamma-form.component';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { ApplyParametersComponent } from './apply-parameters/apply-parameters.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
     AlphaFormComponent,
     BetaFormComponent,
     GammaFormComponent,
+    ApplyParametersComponent,
   ],
   imports: [
     BrowserModule,

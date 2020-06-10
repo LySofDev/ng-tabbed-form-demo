@@ -6,17 +6,23 @@
   <mat-tab-group class="m-12">
     <mat-tab label="Alpha">
       <ng-template matTabContent>
-        <app-alpha-form [formGroup]="alphaFormGroup"></app-alpha-form>
+        <app-apply-parameters>
+          <app-alpha-form [formGroup]="alphaFormGroup"></app-alpha-form>
+        </app-apply-parameters>
       </ng-template>
     </mat-tab>
     <mat-tab label="Beta">
       <ng-template matTabContent>
-        <app-beta-form [formGroup]="betaFormGroup"></app-beta-form>
+        <app-apply-parameters>
+          <app-beta-form [formGroup]="betaFormGroup"></app-beta-form>
+        </app-apply-parameters>
       </ng-template>
     </mat-tab>
     <mat-tab label="Gama">
       <ng-template matTabContent>
-        <app-gamma-form [formGroup]="gammaFormGroup"></app-gamma-form>
+        <app-apply-parameters>
+          <app-gamma-form [formGroup]="gammaFormGroup"></app-gamma-form>
+        </app-apply-parameters>
       </ng-template>
     </mat-tab>
   </mat-tab-group>
