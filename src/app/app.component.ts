@@ -39,4 +39,9 @@ export class AppComponent {
       }),
     });
   }
+
+  onSubmit(formName: string): void {
+    console.log('User has submitted form', formName);
+    console.log('The state of the form is', this.formGroup.get(formName).value);
+  }
 }

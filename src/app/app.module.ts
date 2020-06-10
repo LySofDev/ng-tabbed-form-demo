@@ -13,7 +13,8 @@ import { AlphaFormComponent } from './alpha-form/alpha-form.component';
 import { BetaFormComponent } from './beta-form/beta-form.component';
 import { GammaFormComponent } from './gamma-form/gamma-form.component';
 import { MatExpansionModule } from '@angular/material/expansion';
-import { ApplyParametersComponent } from './apply-parameters/apply-parameters.component';
+import { TabTemplateComponent } from './tab-template/tab-template.component';
+import { ModuleTemplateComponent } from './module-template/module-template.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ApplyParametersComponent } from './apply-parameters/apply-parameters.co
     AlphaFormComponent,
     BetaFormComponent,
     GammaFormComponent,
-    ApplyParametersComponent,
+    TabTemplateComponent,
+    ModuleTemplateComponent,
   ],
   imports: [
     BrowserModule,

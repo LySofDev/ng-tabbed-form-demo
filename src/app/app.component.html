@@ -1,29 +1,27 @@
-<mat-toolbar>Tabbed Form Demo</mat-toolbar>
-<mat-expansion-panel class="mat-elevation-z pt-12 p-12" [expanded]="true">
-  <mat-expansion-panel-header>
-    <h2>Intraday</h2>
-  </mat-expansion-panel-header>
+<app-module-template>
   <mat-tab-group class="m-12">
     <mat-tab label="Alpha">
       <ng-template matTabContent>
-        <app-apply-parameters>
+        <app-tab-template (submit)="onSubmit('alpha')">
           <app-alpha-form [formGroup]="alphaFormGroup"></app-alpha-form>
-        </app-apply-parameters>
+        </app-tab-template>
       </ng-template>
     </mat-tab>
+
     <mat-tab label="Beta">
       <ng-template matTabContent>
-        <app-apply-parameters>
+        <app-tab-template (submit)="onSubmit('beta')">
           <app-beta-form [formGroup]="betaFormGroup"></app-beta-form>
-        </app-apply-parameters>
+        </app-tab-template>
       </ng-template>
     </mat-tab>
+
     <mat-tab label="Gama">
       <ng-template matTabContent>
-        <app-apply-parameters>
+        <app-tab-template (submit)="onSubmit('gamma')">
           <app-gamma-form [formGroup]="gammaFormGroup"></app-gamma-form>
-        </app-apply-parameters>
+        </app-tab-template>
       </ng-template>
     </mat-tab>
   </mat-tab-group>
-</mat-expansion-panel>
+</app-module-template>

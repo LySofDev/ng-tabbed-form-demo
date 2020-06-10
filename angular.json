@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "material-tab-multi-form-demo"
+  "defaultProject": "material-tab-multi-form-demo",
+  "cli": {
+    "analytics": false
+  }
 }
